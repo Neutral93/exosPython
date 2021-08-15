@@ -21,14 +21,14 @@ class QuestionDeux:
         # On cherche le point adjacent contenant un "1" à partir de ce point de départ
         # On réitère cette recherche avec le nouveau point trouvé jusqu'à la fin du tableau
         while col < col_length - 1:
-            if (row > 0) and (col < col_length - 1) and (array[row - 1][col + 1] == 1):
+            if (row > 0) and (array[row - 1][col + 1] == 1):
                 diagonale += 1
                 row -= 1
                 col += 1
-            if (col < col_length - 1) and (array[row][col + 1] == 1):
+            if array[row][col + 1] == 1:
                 ligne += 1
                 col += 1
-            if (row < row_length - 1) and (col < col_length - 1) and (array[row + 1][col + 1] == 1):
+            if (row < row_length - 1) and (array[row + 1][col + 1] == 1):
                 diagonale += 1
                 row += 1
                 col += 1
