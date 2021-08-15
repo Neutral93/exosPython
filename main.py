@@ -55,12 +55,12 @@ array_q5 = [
 ]
 
 MyUtil.print_array(array_q2)
-print("La longueur du parcours est :", QuestionDeux.trajectoire(array_q2))
+print("La longueur du parcours est:", QuestionDeux.trajectoire(array_q2))
 
 MyUtil.print_array(array_q4)
-print("Nombre de cellules vivantes: ", QuestionQuatre.nombreVoisinsVivants(array_q4, 4, 13))
+print("Nombre de cellules vivantes:", QuestionQuatre.nombreVoisinsVivants(array_q4, 4, 13))
 MyUtil.print_array(QuestionQuatre.etatSuivant(array_q4))
 
 MyUtil.print_array(array_q5)
-print("Moyenne des deux diagonales principales de la matrice: ", QuestionCinq.moyenne_diag(array_q5))
-print("Coordonnées des éléments de la matrice qui sont des maxima locaux: ", QuestionCinq.maxima(array_q5))
+print("Moyenne des deux diagonales principales de la matrice:", QuestionCinq.moyenne_diag(array_q5))
+print("Coordonnées des éléments de la matrice qui sont des maxima locaux:", QuestionCinq.maxima(array_q5))

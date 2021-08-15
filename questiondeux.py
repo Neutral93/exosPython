@@ -34,7 +34,7 @@ class QuestionDeux:
                 col += 1
 
         # Affichage des résultats
-        print("Nombre de déplacements en ligne: ", ligne)
-        print("Nombre de déplacements en diagonale: ", diagonale)
+        print("Nombre de déplacements en ligne:", ligne)
+        print("Nombre de déplacements en diagonale:", diagonale)
 
         return sqrt(2) * diagonale + ligne

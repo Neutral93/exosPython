@@ -8,14 +8,14 @@ class QuestionCinq:
         """
         length = len(M)
         result = []
-        total_diag1, total_diag2 = 0, 0
+        sum_diag1, sum_diag2 = 0, 0
 
         for i in range(length):
-            total_diag1 += M[i][i]
-            total_diag2 += M[length - 1 - i][i]
+            sum_diag1 += M[i][i]
+            sum_diag2 += M[length - 1 - i][i]
 
-        result.append(total_diag1 / length)
-        result.append(total_diag2 / length)
+        result.append(sum_diag1 / length)
+        result.append(sum_diag2 / length)
 
         return result
 
